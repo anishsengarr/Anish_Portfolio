@@ -1,193 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
-        <title>Anish Singh Portfolio </title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+            rel="stylesheet"
+        />
+        <title>Anish Singh | Tech Support Engineer</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <script
+            src="https://kit.fontawesome.com/f29fdf8ecb.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
     </head>
     <body>
-         <!-- HEADER -->
-         <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Anish Singh</a>
-                </div>
+        <script src="./theme.js"></script>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills & Tools</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
-                        <li class="nav__item"> <a href="#resume" class="nav__link">Resume</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
+        <!------------- Header ----------------->
+        <header>
+            <a href="#" class="logo">Anish <span>Singh</span></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+            <ul class="navlist">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>  <button class="button">
+                    <a href="./download/Anish_Singh_Resume.pdf" download
+                        >Resume</a
+                    ></button>
+                </li>
+              
+            </ul>
         </header>
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Anish Singh</span><br>Technical Support 
-                    Engineer</h1>
 
-                    <a href="#" class="button">Contact</a>
+        <!---------------- Home  ------------------->
+        <section class="home" id="home">
+            <div class="home-text">
+                <h3>Hello, I'm</h3>
+                <h1>Anish Singh</h1>
+                <h5>Technical Support Engineer <span>from India</span></h5>
+                <p>
+                    I'm always interested about cool stuff. <br />
+                    Are you minding a project? <br />
+                    Let's talk.
+                </p>
+                <div class="social">
+                    <a
+                        href="https://www.linkedin.com/in/anish-singh-368b5a191"
+                        target="_blank"
+                        ><i class="bx bxl-linkedin"></i
+                    ></a>
+                    <a href="https://github.com/anishsengarr" target="_blank"
+                        ><i class="bx bxl-github"></i
+                    ></a>
+                    <a
+                        href="mailto:anishsengarr123@gmail.com"
+                        target="_blank"
+                        ><i class="bx bxl-gmail"></i
+                    ></a>
                 </div>
+                <a
+                    href="./download/Anish_Singh_Resume.pdf"
+                    class="btn"
+                    id="abt_btn"
+                    download
+                    >Download CV</a>
+            </div>
+            <div class="home-img">
+                <img src="./img/resume .jpg" alt="" />
+            </div>
+        </section>
 
-                <div class="home__social">
-                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
-
-                <div class="home__img">    
-                    <img src="" alt="">
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="resume .jpg" alt="">
+        <!---------------- Sub Services  ------------------->
+        <section class="sub-services">
+            <div class="items">
+                <div class="sub-box">
+                    <div class="sub-img">
+                        <img src="./img/target.svg" alt="" />
                     </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">I'am Coding Master</h2>
-                        <p class="about__text">
-                             ,Hi, My name is Anish Singh  I
-                            am a Technical Support Engineer recently graduated from Masai school and
-                        looking for a career as a Technical Support Engineer . 
-                        
-                    
-                            I am from Varanasi , Uttar Pradesh and I've completed my B.tech in electronic and comm. Engineering,   from BBDNIIT lucknow. 
-                        
-                        
-                            I am interested in creating well designed or pixel-perfect Frontend with functionality and take on new 
-                            challenges where I can learn more about web technologies.           
-           </p>  
-        </div>                                   
+                    <h3>Pixel Perfect</h3>
+                    <p>
+                        Design is not just what it looks like and feels like.
+                        Design is how it works.
+                    </p>
                 </div>
-            </section>
 
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills & Tools</h2>
+                <div class="sub-box">
+                    <div class="sub-img">
+                        <img src="./img/brush.svg" alt="" />
+                    </div>
+                    <h3>High Quality</h3>
+                    <p>
+                        Getting a quality website is not an expenses but rather
+                        an investment.
+                    </p>
+                </div>
 
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML5</span>
-                            </div>
-                            <div class="skills__bar skills__html">
+                <div class="sub-box">
+                    <div class="sub-img">
+                        <img src="./img/energy.svg" alt="" />
+                    </div>
+                    <h3>Awesome Idea</h3>
+                    <p>
+                        Most common method for designing websites that work well
+                        on desktop is responsive and adaptive design
+                    </p>
+                </div>
+            </div>
+        </section>
 
-                            </div>
+        <!-------------- About --------------->
+        <section class="about" id="about">
+            <div class="heading">
+                <h3>About</h3>
+                <h2>Hello there!</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-img">
+                    <img
+                        src="./img/—Pngtree—web developer isometric illustration_6067558.png"
+                        alt=""
+                    />
+                </div>
+                <div class="about-text">
+                    <h3>I'm Anish Singh</h3>
+                    <h2>I'm a Tech Support Engineer</h2>
+                    <p>
+                        I'm very passionate and dedicated to my work. I have
+                        acquired the skills and knowledge necessary to make your
+                        project a success.
+                        <br> Analytical and detail-oriented aspiring technical support engineer. Highly adaptable to working on multiple operating systems. Proficient in rapport-building and understanding the outstanding customer service of an organization.
+                  </p>
+                   
+                </div>
+            </div>
+        </section>
+
+        <!-------------- Portfolio --------------->
+        <section class="portfolio" id="portfolio">
+            <div class="heading">
+                <h3>Portfolio</h3>
+                <h2>My Amazing Work</h2>
+            </div>
+            <div class="portfolio-content">
+
+              
+                <div class="col">
+                    <img src="./img/Screenshot 2023-03-12 164613.png" alt="" />
+                    <div class="layer">
+                        <h3>Asana</h3>
+                        <p>
+                            Asana is a web and mobile work management
+platform designed to help teams organize, track,
+and manage their work.
+                        </p>
+                        <p>
+                            <span>Tech Stacks : </span> HTML, CSS
+                            <br>
+                            A collabrative Project build by 2 members.
+                        </p>
+                        <div>
+                            <a
+                                href="https://starlit-crisp-ae57ab.netlify.app/"
+                                target="_blank"
+                                >Live</a
+                            >
+                            <a
+                                href="https://github.com/anishsengarr/Asana"
+                                target="_blank"
+                                >Code</a
+                            >
+                        </div>
+                    </div>
+                    </div>
+
+
+
+                    <div class="col">
+                        <img src="./img/monday.com.png" alt="" />
+                        <div class="layer">
+                            <h3>monday.com Clone</h3>
+                            <p>
+                                Monday.com is a cloud-based platform that allows
+                                users to create their own applications and project
+                                management software.
+                            </p>
+                            <p>
+                                <span>Tech Stacks : </span> HTML, CSS, JavaScript
+                                <br>
+                                A collabrative Project build by 5 members.
+                            </p>
                             <div>
-                                <span class="skills__percentage">90%</span>
+                                <a
+                                    href="https://roaring-meringue-e04538.netlify.app/"
+                                    target="_blank"
+                                    >Live</a
+                                >
+                                <a
+                                    href="https://github.com/adnan25042001/kaput-chin-6583"
+                                    target="_blank"
+                                    >Code</a
+                                >
                             </div>
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS3</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">80%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">JAVASCRIPT</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">60%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">PHP</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">75%</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div>              
-                        <img src="img/skills.png" alt="" class="skills__img">
+                </div>
+
+            
+            
+            </div>
+        </section>
+
+        <!-------------- Skills --------------->
+        <section class="skills" id="skills">
+            <div class="heading">
+                <h3>Skills</h3>
+                <h2>Technologies I've learned</h2>
+            </div>
+            <div class="skill-container">
+                <div class="tech">
+                    <img src="./img/html-svgrepo-com.svg" alt="" />
+                    <h3>HTML</h3>
+                </div>
+                <div class="tech">
+                    <img src="./img/css3-svgrepo-com.svg" alt="" />
+                    <h3>CSS</h3>
+                </div>
+                <div class="tech">
+                    <img src="./img/js-svgrepo-com.svg" alt="" />
+                    <h3>Javascript</h3>
+                </div>
+                <div class="tech">
+                    <img src="./img/pngimg.com - linux_PNG51.png" alt="" />
+                    <h3>Linux</h3>
+                </div>
+                <div class="tech">
+                    <img src="./img/MySQL-Logo.wine.svg" alt="" />
+                    <h3>MySQL</h3>
+                </div>
+                <div class="tech">
+                    <img src="./img/reveal_js.jpg" alt="" />
+                    <h3>Reveal.js</h3>
+                </div>
+
+                <div class="tech">
+                    <img src="./img/icons8-github.svg" alt="" />
+                    <h3>Github</h3>
+                </div>
+                <div class="tech">
+                    <img src="./img/netlify-svgrepo-com.svg" alt="" />
+                    <h3>Netlify</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-------------- Contact --------------->
+        <section class="contact" id="contact">
+            <div class="heading">
+                <h3>Contact</h3>
+                <h2>Get in touch</h2>
+            </div>
+            <div class="form">
+                <div id="left">
+                    <h3 id="mobile">
+                        +91 9305204647
+                    </h3>
+                    <div id="social">
+                        <a
+                            href="https://www.linkedin.com/in/anish-singh-368b5a191"
+                            target="_blank"
+                            ><i class="bx bxl-linkedin"></i
+                        ></a>
+                        <a
+                            href="https://github.com/anishsengarr"
+                            target="_blank"
+                            ><i class="bx bxl-github"></i
+                        ></a>
+                        <a
+                            href="mailto:anishsengarr123@gmail.com"
+                            target="_blank"
+                            ><i class="bx bxl-gmail"></i
+                        ></a>
                     </div>
                 </div>
-            </section>
+                <form>
+                    <input
+                        id="name"
+                        type="text"
+                        placeholder="Enter your name"
+                    />
+                    <input
+                        id="email"
+                        type="email"
+                        placeholder="Enter your email"
+                    />
+                    <textarea
+                        id="message"
+                        type="text"
+                        placeholder="Enter your massage"
+                        cols="30"
+                        rows="10"
+                    ></textarea>
+                    <input id="tbtn" type="submit" value="Let's talk" />
+                </form>
+            </div>
+        </section>
 
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Projects</h2>
+        <section class="ends">
+            <p>Made with love by Anish Singh © 2023</p>
+        </section>
 
-                <div class="work__container bd-grid">
-                    <div class="work__img">
-                        <img src="img/1.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="img/2.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="img/3.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="img/4.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="img/5.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="img/6.jpg" alt="">
-                    </div>
-                </div>
-            </section>
-
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-                <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea placeholder="Message..." name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Enter" class="contact__button button">
-                    </form>
-                </div>
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Created By Anish Singh</p>
-        </footer>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script type="text/javascript" src="./index.js"></script>
+        <script src="./form.js"></script>
     </body>
 </html>
+
+
