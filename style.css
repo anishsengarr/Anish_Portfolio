@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0px;
     padding: 0px;
@@ -167,6 +169,16 @@ section {
     border-radius: 100%;
     border: 3px solid var(--main-clr);
 }
+.text {
+    position: relative;
+    top: 2em;
+    animation: slide-up 4s infinite;
+  }
+  @keyframes slide-up {
+    0% {top: 2em}
+    50% {top: 0em}
+    100% {top: 2em}
+  }
 .items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -314,8 +326,8 @@ section {
     cursor: pointer;
 }
 .tech img {
-    width: 120px;
-    height: 120px;
+    width: 60px;
+    height: 60px;
 }
 
 .ends {
@@ -511,8 +523,8 @@ textarea:focus {
         grid-template-columns: repeat(3, 1fr);
     }
     .tech img {
-        width: 80px;
-        height: 80px;
+        width: 120px;
+        height: 120px;
     }
     .items {
         grid-template-columns: repeat(2, 1fr);
