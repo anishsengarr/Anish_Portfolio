@@ -32,3 +32,9 @@ document.querySelector("form").addEventListener("submit", (e) => {
     document.querySelector("#email").value = "";
     document.querySelector("#message").value = "";
 });
+
+
+function resumeDownload(){
+   
+    window.open("./download/Anish_Singh_Resume.pdf","_blank");
+  }
