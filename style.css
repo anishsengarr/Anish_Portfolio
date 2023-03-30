@@ -242,6 +242,7 @@ section {
     font-weight: 500;
     margin: 7px 0px 20px;
     line-height: 1.1;
+    padding-top: 40px;
 }
 .heading h3 {
     color: var(--main-clr);
