@@ -36,5 +36,5 @@ document.querySelector("form").addEventListener("submit", (e) => {
 
 function resumeDownload(){
    
-    window.open("./download/Anish_Singh_Resume.pdf","_blank");
+    window.open("./download/Anish-Aws_Resume.pdf","_blank");
   }
